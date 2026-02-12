@@ -518,7 +518,7 @@ class MaisArtJournalPlugin(BasePlugin):
             "fixed_size_enabled": ConfigField(
                 type=bool,
                 default=False,
-                description="是否固定图片尺寸。开启后强制使用 default_size，关闭则由 MaiBot LLM 根据内容自动选择。豆包格式建议开启（因为豆包不接受像素格式尺寸）",
+                description="是否固定图片尺寸。开启后强制使用 default_size，关闭则由 MaiBot LLM 根据内容自动选择",
                 label="固定尺寸",
                 group="params",
                 order=6
@@ -567,7 +567,7 @@ class MaisArtJournalPlugin(BasePlugin):
             "watermark": ConfigField(
                 type=bool,
                 default=True,
-                description="是否添加水印（仅豆包格式生效）",
+                description="是否添加水印",
                 label="水印",
                 group="params",
                 order=11
@@ -603,7 +603,7 @@ class MaisArtJournalPlugin(BasePlugin):
             "support_img2img": ConfigField(
                 type=bool,
                 default=True,
-                description="该模型是否支持图生图功能。设为false时会自动降级为文生图。梦羽AI(mengyuai)格式必须设为false",
+                description="该模型是否支持图生图功能。设为false时会自动降级为文生图",
                 label="支持图生图",
                 group="prompts",
                 order=15
